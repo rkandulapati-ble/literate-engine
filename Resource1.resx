@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Auction.NotSold.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Auction Not sold:&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="auction/Username"/&gt;
+		&lt;br /&gt;&lt;br/&gt;
+		Your aution item &lt;xsl:value-of select="auction/item/Name" /&gt; was not sold.
+	&lt;/p&gt;
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="Auction.Offer.Accepted.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Offer Accepted :&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="auction/Bidder"/&gt;
+		&lt;br /&gt;&lt;br/&gt;
+		Congratulations, you offer on &lt;xsl:value-of select="auction/item/Name"/&gt; item is accepted
+		&lt;br /&gt;&lt;br/&gt;
+		We will inform you once the shipment is ready.
+	&lt;/p&gt;
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="Auction.Offer.Offered.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Offer Offered :&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="auction/Bidder"/&gt;
+		&lt;br /&gt;&lt;br/&gt;
+		There is a new offer on the item &lt;xsl:value-of select="auction/item/Name"/&gt; for &lt;xsl:value-of select="auction/AuctionAmount" /&gt; amount.
+	&lt;/p&gt;
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="Auction.Offer.Rejected.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Offer Rejected :&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="auction/Bidder"/&gt;
+		&lt;br /&gt;&lt;br/&gt;
+		Your current offer on item &lt;xsl:value-of select="auction/item/Name"/&gt; for &lt;xsl:value-of select="auction/AuctionAmount" /&gt; amount was rejected. Please login into the website to increase the amount.
+	&lt;/p&gt;
+	&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="Auction.Outbid.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Auction Outbid:&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="auction/Bidder"/&gt;
+		&lt;br /&gt;&lt;br/&gt;
+		You are out bid on the aution item &lt;xsl:value-of select="auction/item/Name" /&gt;. 
+		&lt;!--	Set a variable to hold the href link --&gt;
+		&lt;xsl:variable name="href" select="aution/item/imagepath"&gt;&lt;/xsl:variable&gt;
+		&lt;!--  Put the contents of the variable into the HTML --&gt;		
+		&lt;img src="{$href}"/&gt;        
+
+		Please increase the amount and retry.
+		
+	&lt;/p&gt;
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using our site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="Auction.Question.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Auction Question:&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="auction/Username"/&gt;
+		&lt;br /&gt;&lt;br/&gt;
+		 There is a question from &lt;xsl:value-of select="auction/Bidder"/&gt; for &lt;xsl:value-of select="auction/item/Name" /&gt; item. 
+		 &lt;br/&gt;&lt;br/&gt;
+		 &lt;xsl:value-of select="auction/Question" /&gt; ?
+	&lt;/p&gt;
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="Auction.Reminder.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Auction Remainder:&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="auction/Bidder"/&gt;
+		&lt;br /&gt;&lt;br/&gt;
+		Please make a payment on the &lt;xsl:value-of select="auction/item/Name" /&gt; item that you won in the auction.. 
+		&lt;br/&gt;&lt;br/&gt;
+		Please take an action.
+	&lt;/p&gt;
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="Auction.Repost.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Auction Repost:&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="auction/Username"/&gt;
+		&lt;br /&gt;&lt;br/&gt;
+		Please repost your item &lt;xsl:value-of select="auction/item/Name" /&gt;. Your auction was expired.
+		&lt;br/&gt;&lt;br/&gt;
+		Please take an action.
+	&lt;/p&gt;
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="Auction.Sold.Bidder.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Auction Won :&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="auction/Bidder"/&gt;
+		&lt;br /&gt;&lt;br/&gt;
+		Congratulations, you have won the auction of &lt;xsl:value-of select="auction/item/Name"/&gt; item for &lt;xsl:value-of select="auction/AuctionAmount"/&gt;.
+		&lt;br /&gt;&lt;br/&gt;
+		We will inform you of any further steps.
+	&lt;/p&gt;
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="Auction.Sold.Seller.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Auction Item Sold :&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="auction/Username"/&gt;
+		&lt;br /&gt;&lt;br/&gt;
+		Congratulations, the auction of &lt;xsl:value-of select="auction/item/Name"/&gt; item is completed and the the bidder &lt;xsl:value-of select="auction/Bidder"/&gt; has won for &lt;xsl:value-of select="auction/AuctionAmount"/&gt; price.
+		&lt;br /&gt;&lt;br/&gt;
+		Please login into the our website and complete the process.
+	&lt;/p&gt;
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="Auction.WatcherRepost.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Auction Repost:&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="auction/Bidder"/&gt;
+		&lt;br /&gt;&lt;br/&gt;
+		The item &lt;xsl:value-of select="auction/item/Name" /&gt; is reposted. Please check this item in you are still interested.		     
+		
+	&lt;/p&gt;
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="ItemShipped.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Item Shipped :&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="order/Username"/&gt;
+		&lt;br/&gt;
+		Order ID: &lt;xsl:value-of select="order/OrderNumber"/&gt;
+	&lt;/p&gt;
+	&lt;!--	Set a variable to hold the href link --&gt;
+	&lt;xsl:variable name="href" select="/order/shipment/url"&gt;&lt;/xsl:variable&gt;
+	&lt;!--  Put the contents of the variable into the HTML --&gt;
+    Your order has been shipped. Please click on the below link to track the item &lt;a href="{$href}"&gt;track item&lt;/a&gt;
+
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="PaymentInfo.Created.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Payment Info Created :&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="payment/Username"/&gt;
+		&lt;br/&gt;
+		A new payment info has been created. A new &lt;xsl:value-of select="payment/CardType"/&gt; card with card number &lt;xsl:value-of select="payment/last4CardNumber"/&gt; has been added.
+	&lt;/p&gt;
+		If you have not done this activity, please call our customer service about it at 1-800-xxx-xxxx
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="PaymentInfo.Deleted.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Payment Info deleted :&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="payment/Username"/&gt;
+		&lt;br/&gt;
+		An existing &lt;xsl:value-of select="payment/CardType"/&gt; card with card number &lt;xsl:value-of select="payment/last4CardNumber"/&gt; has been deleted.
+	&lt;/p&gt;
+		If you have not done this activity, please call our customer service about it at 1-800-xxx-xxxx
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="PaymentInfo.Updated.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Payment Info Updated :&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="payment/Username"/&gt;
+		&lt;br/&gt;
+		Payment info has been updated. An existing &lt;xsl:value-of select="payment/CardType"/&gt; card with card number &lt;xsl:value-of select="payment/last4CardNumber"/&gt; has been updated.
+	&lt;/p&gt;
+		If you have not done this activity, please call our customer service about it at 1-800-xxx-xxxx
+	&lt;br /&gt;&lt;br/&gt;
+	Thank you for using or site.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="PaymentReminder.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Payment Reminder:&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="PaymentReminder/Username"/&gt;
+		&lt;br/&gt;&lt;br/&gt;
+		This is a friendly reminder that the following invoice is overdue&lt;br/&gt;
+	&lt;/p&gt;
+			&lt;TABLE Border="0"&gt;			
+			&lt;TR&gt;
+				&lt;td&gt;Invoice Date:  &lt;/td&gt;
+				&lt;td&gt;&lt;xsl:value-of select="PaymentReminder/invoice/InvoiceDate"/&gt;&lt;/td&gt;
+			&lt;/TR&gt;
+			&lt;TR&gt;
+				&lt;td&gt;Invoice No:  &lt;/td&gt;
+				&lt;td&gt;&lt;xsl:value-of select="PaymentReminder/invoice/InvoiceNumber"/&gt;&lt;/td&gt;			
+			&lt;/TR&gt;			
+			&lt;TR&gt;
+				&lt;td&gt;Invoice Amount:  &lt;/td&gt;
+				&lt;td&gt;&lt;xsl:value-of select="PaymentReminder/invoice/Amount"/&gt;&lt;/td&gt;						
+			&lt;/TR&gt;		
+			&lt;/TABLE&gt;&lt;br/&gt;
+	We understand that oversights happen but would appreciate prompt payment of this amount. Could you please make a payment? If payment has already been made please disregard this email.
+	&lt;br/&gt;&lt;br/&gt;
+	Thanks in advance for your cooperation.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="ShipNowReminder.Email.Body" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H2&gt;Shipment Reminder:&lt;/H2&gt;		
+	&lt;p&gt;
+		Dear &lt;xsl:value-of select="ShipmentReminder/Username"/&gt;
+		&lt;br/&gt;
+		Order ID: &lt;xsl:value-of select="ShipmentReminder/order/OrderNumber"/&gt;
+	&lt;/p&gt;
+    Your Marketplace sale is official! We've deposited your earnings from the sale of this item into your Payments account.
+
+	Please ship the item immediately via &lt;xsl:value-of select="ShipmentReminder/order/shipment/packagemethod"/&gt; shipment.
+	
+	&lt;TABLE Border="0" colspan="4"&gt;	
+			&lt;tr&gt;
+			&lt;th&gt;
+				QTY
+			&lt;/th&gt;
+			&lt;th&gt;
+				ItemName
+			&lt;/th&gt;
+			&lt;/tr&gt;
+			&lt;xsl:choose&gt;
+            &lt;xsl:when test="ShipmentReminder/order/invoice[(item !='')]"&gt;
+			&lt;tr&gt;
+                &lt;td&gt;
+                    &lt;span&gt;&lt;xsl:value-of select="ShipmentReminder/order/invoice/item/Count"/&gt;&lt;/span&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                    &lt;span&gt;&lt;xsl:value-of select="ShipmentReminder/order/invoice/item/Name"/&gt;&lt;/span&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/xsl:when&gt;
+            &lt;/xsl:choose&gt;	
+	&lt;/TABLE&gt;&lt;br/&gt;
+
+    You have agreed to ship no later than two business days after the buyer's purchase on &lt;xsl:value-of select="ShipmentReminder/order/OrderDate"/&gt;
+	&lt;br/&gt;&lt;br/&gt;	
+	Thanks in advance for your cooperation.	
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+  <data name="XsltContent" xml:space="preserve">
+    <value>&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+	&lt;xsl:template match="/"&gt;
+	&lt;HTML&gt;
+	&lt;BODY&gt;
+	&lt;H1&gt;Books:&lt;/H1&gt;
+		&lt;xsl:apply-templates/&gt;
+	&lt;/BODY&gt;
+	&lt;/HTML&gt;
+	&lt;/xsl:template&gt;
+
+	&lt;xsl:template match="bookstore"&gt;
+	&lt;!-- Prices and books --&gt;
+		&lt;TABLE Border="1"&gt;
+		&lt;TH&gt;Title&lt;/TH&gt;
+		&lt;TH&gt;ISBN&lt;/TH&gt;
+		&lt;TH&gt;Price&lt;/TH&gt;
+			&lt;xsl:apply-templates select="book"/&gt;
+		&lt;/TABLE&gt;
+	&lt;/xsl:template&gt;
+
+	&lt;xsl:template match="book"&gt;
+		&lt;TR&gt;
+			&lt;TD&gt;&lt;xsl:apply-templates select="title"/&gt;&lt;/TD&gt;
+			&lt;TD&gt;&lt;xsl:value-of select="@ISBN"/&gt;&lt;/TD&gt;
+			&lt;TD&gt;&lt;xsl:apply-templates select="price"/&gt;&lt;/TD&gt;
+		&lt;/TR&gt;
+	&lt;/xsl:template&gt;
+	&lt;xsl:template match="title"&gt;
+		&lt;xsl:value-of select="."/&gt;
+	&lt;/xsl:template&gt;
+	
+	&lt;xsl:template match="price"&gt;
+		&lt;xsl:value-of select="."/&gt;
+	&lt;/xsl:template&gt;
+	
+&lt;/xsl:stylesheet&gt;</value>
+  </data>
+</root>

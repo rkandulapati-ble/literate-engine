@@ -1,0 +1,49 @@
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("PaymentReminder.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("ShipNowReminder.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("ItemShipped.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("Auction.Sold.Seller.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("Auction.Sold.Bidder.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("Auction.Offer.Accepted.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("Auction.Offer.Offered.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("Auction.Offer.Rejected.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("Auction.Question.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("PaymentInfo.Created.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("PaymentInfo.Updated.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("PaymentInfo.Deleted.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("Auction.Reminder.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("Auction.Repost.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("Auction.WatcherRepost.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("Auction.NotSold.Email.Body", userCulture));
+
+
+var messageBody = doc.XslTransform(Resource1.ResourceManager.GetString("Auction.Outbid.Email.Body", userCulture));
